@@ -1,0 +1,41 @@
+tests/test-outputs/
+temp/
+dist/
+.pytest_cache/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+*.pywz
+*.pyzw
+*.pyzwz
+*.pyzwzw
+*.pyzwzwz
+.venv/
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Linux
+.directory
+.cache
+.local
+.config
+.history
+.log
+.log.*
+.log.*.*
+.log.*.*.*
+
+# Cursor
+.cursor/
+
+# VSCode
+.vscode/
