@@ -1,6 +1,6 @@
 [project]
 name = "pdf-manipulation-mcp-server"
-version = "0.1.0"
+version = "0.1.1"
 description = "A study project: MCP server for direct PDF manipulation and editing"
 authors = [
     {name = "André da Silva Medeiros", email = "andr3medeiros@gmail.com"}

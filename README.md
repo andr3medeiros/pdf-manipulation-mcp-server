@@ -124,23 +124,18 @@ Follow the installation steps above to set up the MCP server.
 
 Add this configuration to your Cursor settings:
 
-**Option A: Using Cursor Settings UI**
-1. Open Cursor Settings (`Cmd+,` on Mac, `Ctrl+,` on Windows/Linux)
-2. Search for "MCP" in settings
-3. Add this configuration:
-
-```json
+```
+**Option A: Using an MCP config and uvx:**
+````json
 {
-  "mcp.servers": {
+  "mcpServers": {
     "pdf-manipulation": {
-      "command": "uv",
-      "args": ["run", "python", "server.py"],
-      "cwd": "/path/to/pdf-manipulation-mcp-server"
+      "command": "uvx",
+      "args": ["--from", "pdf-manipulation-mcp-server", "pdf-mcp-server"]
     }
   }
 }
 ```
-
 **Option B: Using MCP Config File**
 
 Create `~/.cursor/mcp_config.json`:
@@ -148,6 +143,22 @@ Create `~/.cursor/mcp_config.json`:
 ```json
 {
   "mcpServers": {
+    "pdf-manipulation": {
+      "command": "uv",
+      "args": ["run", "python", "server.py"],
+      "cwd": "/path/to/pdf-manipulation-mcp-server"
+    }
+  }
+}
+
+**Option C: Using Cursor Settings UI**
+1. Open Cursor Settings (`Cmd+,` on Mac, `Ctrl+,` on Windows/Linux)
+2. Search for "MCP" in settings
+3. Add this configuration:
+
+```json
+{
+  "mcp.servers": {
     "pdf-manipulation": {
       "command": "uv",
       "args": ["run", "python", "server.py"],
