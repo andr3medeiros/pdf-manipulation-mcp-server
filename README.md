@@ -1,5 +1,7 @@
 # PDF Manipulation MCP Server
 
+> **📚 This project is entirely based on [PyMuPDF](https://pymupdf.readthedocs.io/) - a powerful Python library for PDF manipulation. Please check out the official PyMuPDF documentation to learn more about its extensive capabilities!**
+
 A study project implementing a Model Context Protocol (MCP) server that provides comprehensive PDF manipulation capabilities using the official MCP FastMCP framework. This project focuses on direct PDF editing and manipulation features for learning and experimentation purposes.
 
 **Quick Start:** Run directly with `uv run pdf-manipulation-mcp-server` (like npx for Node.js packages)
@@ -124,9 +126,11 @@ Follow the installation steps above to set up the MCP server.
 
 Add this configuration to your Cursor settings:
 
-```
 **Option A: Using an MCP config and uvx:**
-````json
+
+Create `~/.cursor/mcp_config.json`:
+
+```json
 {
   "mcpServers": {
     "pdf-manipulation": {
@@ -136,7 +140,7 @@ Add this configuration to your Cursor settings:
   }
 }
 ```
-**Option B: Using MCP Config File**
+**Option B: Using MCP Config File from a local installation**
 
 Create `~/.cursor/mcp_config.json`:
 
@@ -150,6 +154,7 @@ Create `~/.cursor/mcp_config.json`:
     }
   }
 }
+```
 
 **Option C: Using Cursor Settings UI**
 1. Open Cursor Settings (`Cmd+,` on Mac, `Ctrl+,` on Windows/Linux)
