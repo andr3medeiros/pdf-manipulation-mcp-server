@@ -4,6 +4,10 @@
 
 A study project implementing a Model Context Protocol (MCP) server that provides comprehensive PDF manipulation capabilities using the official MCP FastMCP framework. This project focuses on direct PDF editing and manipulation features for learning and experimentation purposes.
 
+<a href="https://glama.ai/mcp/servers/@andr3medeiros/pdf-manipulation-mcp-server">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@andr3medeiros/pdf-manipulation-mcp-server/badge" alt="PDF Manipulation Server MCP server" />
+</a>
+
 **Quick Start:** Run directly with `uv run pdf-manipulation-mcp-server` (like npx for Node.js packages)
 
 ## Features
